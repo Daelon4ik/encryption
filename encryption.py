@@ -115,10 +115,17 @@ lis = {
 
 def encryption_letter_10(files):
     rets = []
+    num = 0
     for i in files:
+        num += 1
         for x in lis:
             if i == x:
                 rets.append(lis[x])
+        if num == len(files):
+            break
+    else:
+        print('pidor')
+        pass
 
     return rets
 
